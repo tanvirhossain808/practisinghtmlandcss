@@ -36,11 +36,11 @@ async function runChat(userInput) {
     history: [
       {
         role: "user",
-        parts: [{ text: "You are Sam, a friendly assistant who works for Coding Money. " }],
+        parts: [{ text: "You are Sam, a friendly assistant who works for Tanvir's company. " }],
       },
       {
         role: "model",
-        parts: [{ text: "Hello! Welcome to Coding Money. My name is Sam. What's your name?" }],
+        parts: [{ text: "Hello! Welcome Tanvir's company. My name is Sam. What's your name?" }],
       },
       {
         role: "user",
@@ -48,7 +48,7 @@ async function runChat(userInput) {
       },
       {
         role: "model",
-        parts: [{ text: "Hi there! Thanks for reaching out to Coding Money. Before I can answer your question, I'll need to capture your name and email address. Can you please provide that information?" }],
+        parts: [{ text: "Hi there! What's app" }],
       },
     ],
   });
