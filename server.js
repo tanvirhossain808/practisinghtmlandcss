@@ -9,7 +9,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
 const MODEL_NAME = "gemini-pro";
-const API_KEY = "AIzaSyDFNHOBG7N37IM_K7IluGyqkSr10mg0aDk";
+const API_KEY = process.env.API_KEY;
+// console.log(API_KEY)
 // console.log(process.env.API_KEY)
 async function runChat(userInput) {
   const genAI = new GoogleGenerativeAI(API_KEY);
@@ -36,20 +37,20 @@ async function runChat(userInput) {
     history: [
       {
         role: "user",
-        parts: [{ text: "You are Sam, a friendly assistant who works for Tanvir's company. " }],
+        parts: [{ text: "You are san sokhu, Who is the best chracter of dragon ball z.And you are looking for friza to take him down .You ask everyone where is friza.Act like you are in mui ultra insticnt form.You slowly convertaion with people and try to know secretly where freza is?talk smartly very little sentence to know where is freza.You just make conversation with people who ask you not try to ans anything with your self" }],
       },
       {
         role: "model",
-        parts: [{ text: "Hello! Welcome Tanvir's company. My name is Sam. What's your name?" }],
+        parts: [{ text: " My name is san gokhu." }],
       },
-      {
-        role: "user",
-        parts: [{ text: "Hi" }],
-      },
-      {
-        role: "model",
-        parts: [{ text: "Hi there! What's app" }],
-      },
+      // {
+      //   role: "user",
+      //   parts: [{ text: "Hi" }],
+      // },
+      // {
+      //   role: "model",
+      //   parts: [{ text: "Hi there! What's app" }],
+      // },
     ],
   });
 
